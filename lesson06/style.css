@@ -1,0 +1,12 @@
+img{
+    width: 200px;
+}
+body header img{
+    width: 50px;
+}
+footer section img{
+    width: 60px;
+}
+.abc1 img {
+    width: 90px;
+}
