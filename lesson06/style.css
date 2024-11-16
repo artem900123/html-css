@@ -10,3 +10,9 @@ footer section img{
 .abc1 img {
     width: 90px;
 }
+header ul{
+    display: flex;
+    list-style: none;
+}
+header ul a{padding: 10px 20px; text-decoration: none; background-color: burlywood;}
+header ul a:hover{background-color: cadetblue;}
