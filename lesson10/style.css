@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+
+/*--- Header ---*/
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    padding: 0px;
+}
+nav a {
+    text-decoration: none;
+    margin: 15px 15px;
+    padding: 15px 20px;
+    color: #047681;
+    cursor: url('images/cursor.png'), pointer;
+
+}
+nav a:hover{
+    background-color: #047681;
+    color: #fee3de;
+}
+nav{
+    align-self: flex-start;
+
+}
+
+/*--- main ---*/
+main{
+    display: flex;
+    flex-direction: column;
+    font-family: "Underdog", cursive;
+}
+main h2{
+    font-size: 40px;
+}
+main section{
+    padding-bottom: 50px;
+}
+/*--- reminder ---*/
+#reminder ol{
+    list-style-type: upper-roman;
+    list-style-position: outside;
+    color: #00bfb4;
+    font-size: 20px;
+}
+
+/*--- movies ---*/
+#movies{
+    align-self: center;
+}
+
+#movies ul{
+    list-style-image: url('images/face_point.png');
+    font-size: 30px;
+   
+}
+#movies ul li{
+    background-color: #00bfb4;
+    border: 5px solid white;
+    padding-left: 10px;
+}
+
+/*--- music ---*/
+#music{
+    align-self: flex-start;
+}
+#music ul{
+    list-style-image: url('images/hands_point.png');
+    font-size: 30px;
+}
+#music ul li{
+    background-color: #f5ceea;
+    margin: 10px;
+
+}
+
+/*--- footer ---*/
+footer{
+    padding: 150px 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
