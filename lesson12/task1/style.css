@@ -1,0 +1,45 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 4rem;
+	color: #dd1102;
+	font-family: 'Permanent marker', cursive;
+	margin: 15px;
+}
+
+main {
+	position: relative;
+	height: 98vh;
+	min-height: 500px;
+	text-align: center;
+	padding: 15px;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-image: 
+	    url('images/bg_front_sky.png'),
+		url('images/bg_middle_sky.png'),
+		url('images/bg_back_sky.png'),
+		url('images/bg_under_sky.png'),
+		url('images/bg_front_grass.png'),
+		url('images/bg_middle_grass.png'),
+		url('images/bg_grass.png'),
+		linear-gradient(to bottom, #FDEB7F 10%, #FFFBDB 75%);
+	background-position: 
+	    top,
+		top,
+		top,
+		top,
+		bottom,
+		bottom,
+		bottom;
+
+}
+img{
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	transform: translateX(-50%);
+}
