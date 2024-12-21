@@ -1,0 +1,103 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: 'Quimbie', sans-serif;
+    letter-spacing: 3px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/africa.jpg);
+    background-size: cover;
+    padding: 30px;
+    height: 100vh
+}
+h1 {
+    color: #82b005;
+    font-size: 4rem;
+    margin: 50px;
+    text-shadow: -3px -2px 0px black;
+    border-bottom: 8px double;
+}
+/*-- about --*/
+#about{
+    display: flex;
+    background-color: #FFD373;
+}
+#about img{
+    height: 100%;
+}
+#about_inform{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-left: 8px dotted #82b005;
+}
+#about_inform div{
+    margin: 10px;
+    box-shadow:
+        0px 12px 10px rgba(0,0,0,0.25),
+        0px 8px 8px rgba(42,243,112,0.2);
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+#about_inform div:nth-child(1){
+    align-self: flex-start;
+    padding: 20px;
+    background-color: #688b07;
+    border-radius: 50%;
+
+}
+#about_inform div:nth-child(2){
+
+    padding: 20px;
+    background-color: #d2f379;
+    color: darkgreen;
+}
+#about_inform div:nth-child(3){
+    align-self: flex-end;
+    padding: 20px;
+    background-color: #4d6705;
+}
+/*main_inform*/
+#main_inform{
+    display: flex;
+}
+#main_inform_text{
+    background-image: linear-gradient(to top left, #B5D169, #FBFF94);
+}
+#main_inform_text p{
+    padding: 60px;
+    margin: 20px;
+    font-size: 1.3rem;
+    text-align: justify;
+    text-indent: 15px;
+    border-image-source: url('images/foot_frame.png');
+    border-image-width: 40px;
+    border-style: solid;
+    border-image-repeat: round;
+    border-image-slice: 40;
+}
+/**/
+#life{
+    display: flex;
+    padding: 120px 50px;
+    background-image: url('images/bottom_fox.jpg');
+    background-size: cover;
+}
+#life div{
+    padding: 60px 40px;
+    color: #FFFFBF;
+    border: solid 5px;
+}
