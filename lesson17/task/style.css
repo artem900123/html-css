@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*--- ABOUT ---*/
+.container_about{
+    display: grid;
+    grid-template-columns: 1fr 200px 1fr;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: 
+        "navigation navigation navigation"
+        "film_name . spot_about"
+        "film_about . spot_about"
+        "film_about . arlo_about"
+        "studio_logo . arlo_about";
+    justify-items: center;
+    align-items: center;
+    padding: 40px;
+    row-gap: 15px;
+    background-image: url(images/GD_poster.png);
+    background-size: cover;
+    height: 100vh;
+}
+.container_about header{
+    grid-area: navigation;
+}
+.film_name{
+    grid-area: film_name;
+}
+.film_about{
+    grid-area: film_about;
+}
+.studio_logo{
+    grid-area: studio_logo;
+}
+.spot_about{
+    grid-area: spot_about;
+}
+.arlo_about{
+    grid-area: arlo_about;
+}
+header nav ul{
+    display:flex;
+    list-style:none;
+}
+
+
+/*--- VIDEO ---*/
+.video1 video{
+    width: 450px;
+    height: 300px;
+}
+.video2 iframe{
+    width: 450px;
+    height: 300px;
+}
