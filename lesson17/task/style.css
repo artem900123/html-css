@@ -1,6 +1,16 @@
+.permanent-marker-regular {
+    font-family: "Permanent Marker", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
 *{
     margin: 0;
     padding: 0;
+}
+body{
+    font-family: "Philosopher", serif;
 }
 /*--- ABOUT ---*/
 .container_about{
@@ -13,6 +23,7 @@
         "film_about . spot_about"
         "film_about . arlo_about"
         "studio_logo . arlo_about";
+
     justify-items: center;
     align-items: center;
     padding: 40px;
@@ -25,32 +36,135 @@
     grid-area: navigation;
 }
 .film_name{
+    font-size: 34px;
     grid-area: film_name;
+    color: #016f48;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 
+        -4px -4px 3px #28daa4,
+        -6px -6px 4px #c0fded;
+    transition: text-shadow 1s ease;
+}
+.film_name:hover{
+    text-shadow: 
+        4px 4px 3px #28daa4,
+        6px 6px 4px #c0fded;
 }
 .film_about{
     grid-area: film_about;
+    width: 300px;
+    padding: 15px;
+    background-color: rgba(51, 105, 173, 0.7);
+    text-align: center;
+    font-family: cursive;
+    color: #d3fbff;
 }
 .studio_logo{
     grid-area: studio_logo;
 }
 .spot_about{
     grid-area: spot_about;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(250, 250, 250, 0.7);
+    box-shadow: 0 0 6px 1px white;
 }
 .arlo_about{
     grid-area: arlo_about;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(250, 250, 250, 0.7);
+    box-shadow: 0 0 6px 1px white;
 }
 header nav ul{
     display:flex;
     list-style:none;
 }
-
+header nav ul li{
+    color: #d3fbff;
+    padding: 10px 20px;
+    border-bottom: 6px solid;
+    transition: border-bottom 0.5s, text-shadow 0.5s;
+}
+header nav ul li:hover {
+    border-bottom: 6px solid #39fdc2;
+    text-shadow:
+        3px 3px 3px #28daa4,
+        -3px -3px 3px #28daa4;
+}
+header nav a{
+    text-decoration: none;
+    color: #d3fbff;
+    font-weight: bold;
+}
 
 /*--- VIDEO ---*/
+#video{
+    background-image: url(images/spot_background.jpg);
+    background-size: cover;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+        "video1 video_header"
+        "video2 .";
+}
+.video1{
+    grid-area: video1;
+}
 .video1 video{
     width: 450px;
     height: 300px;
+    border: 1px solid wheat;
+}
+.video2{
+    grid-area: video2;
+    margin-top: 20px;
+}
+.video_header{
+    grid-area: video_header;
+    font-size: 40px;
+    color: #562e02;
+    text-shadow:
+        3px 3px 3px #fee6b7,
+        -3px -3px 3px #d4c56f;
+}
+.video_header h2{
+    text-align: center;
 }
 .video2 iframe{
     width: 450px;
     height: 300px;
+    border: 1px solid wheat;
+}
+/*--- AUDIO ---*/
+#audio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 600px;
+    grid-template-areas: "audio_header audio1";
+    background-image: url(images/spot_and_arlo.jpg);
+    background-size: cover;
+    padding: 30px;
+}
+.audio_header{
+    grid-area: audio_header;
+    font-size: 40px;
+    color: #562e02;
+    text-shadow:
+    3px 3px 3px #fee6b7,
+    -3px -3px 3px #d4c56f;
+
+}
+.audio1{
+    grid-area: audio1;
+}
+.audio1 ul{
+    list-style: none;
+}
+.audio1 ul li{
+    padding: 10px;
+    margin-top: 30px;
 }
