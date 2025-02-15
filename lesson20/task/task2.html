@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: gainsboro;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0px;
+        }
+
+        body>div {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+        div > div{
+            background-color: #e0e0e0;
+            padding:10px;
+            transition: transform 0.4 ease;
+            width:150px;
+        }
+        div>div:hover{
+            transform: rotate(5deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+        <div>
+            <img src="https://picsum.photos/200/300" alt="">
+        </div>
+    </div>
+</body>
+
+</html>
