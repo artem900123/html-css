@@ -1,0 +1,135 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo_H2O {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border: 3px solid black;
+    border-top: none;
+}
+.logo_H2O p {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: white;
+    font-size: 60px;
+}
+.dribble {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    background-color: #3B9BE5;
+    animation: animation_dribble 10s ease-out 2;
+}
+.face {
+    width: 130px;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: rotate(220deg);
+}
+.eyes {
+    display: flex;
+}
+.eyes div {
+    width: 5px;
+    height: 5px;
+    background-color: black;
+    border-radius: 50px;
+    margin: 25px 20px 0 20px;
+    
+}
+.mouth {
+    width: 20px;
+    height: 15px;
+    border-radius: 50%;
+    border-bottom: 3px solid black;
+    margin-top: 10px;
+}
+
+@keyframes animation_dribble {
+    0% {
+        bottom: 0px;
+    }
+    5% {
+        bottom: -200px;
+        border-radius: 0 0 0 0;
+    }
+    10% {
+        bottom: -200px;
+        border-radius: 50% 0 0 0;
+        transform: translate(0,0) rotate(45deg) scale(1);
+    }    
+    15% {
+        bottom: -200px;
+        border-radius: 50% 50% 0 0;
+        transform: translate(0,0) rotate(90deg) scale(1);
+    }  
+    20%, 22% {
+        bottom: -200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0,0) rotate(135deg) scale(1);
+        background-color: #3DFFFD;
+    }      
+    24%, 32% {
+        bottom: -200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(135deg) scale(1.2);
+    }          
+    26%, 30% {
+        bottom: -200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(-20px, 0) rotate(135deg) scale(1.2);
+    }          
+    28%, 32% {
+        bottom: -200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(20px, 0) rotate(135deg) scale(1.2);
+    }    
+    40% {
+        bottom: 200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(135deg) scale(1);
+    }    
+    50% {
+        bottom: 200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(135deg) scale(1);
+    }   
+    60% {
+        bottom: 200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(135deg) scale(1.2);
+    }   
+    70% {
+        bottom: -30px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(135deg) scale(1.1);
+    }  
+    80% {
+        bottom: 200px;
+        border-radius: 50% 50% 50% 0 ;
+        transform: translate(0, 0) rotate(495deg) scale(1);
+        background-color: #3B9BE5;
+    }    
+    90% {
+        bottom: 200px;
+        border-radius: 0% 0% 0% 0 ;
+        transform: translate(0, 0) rotate(495deg) scale(1);
+        background-color: #3B9BE5;
+    }    
+    100%{
+        bottom: 0px;
+    }
+}
