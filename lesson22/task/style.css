@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Philosopher', sans-serif;
+    background-color: #020749;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+/*--- menu ---1*/
+.menu {
+    width: 300px;
+    position: relative;
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.menu ul li {
+    position: relative;
+}
+.menu ul li div:nth-child(1){
+    padding: 15px 10px;
+    transition: transform 0.5 ease;
+}
+.menu ul li:hover div:nth-child(1){
+    transform: scale(1.1);
+}
+.menu ul li div:nth-child(2){
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 360px;
+    width: 300px;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 16px;
+    box-shadow: 2px 2px 5px 2px black;
+    border-radius: 5px;
+    z-index: 1;
+    color: white;
+    transition: opacity 1s linear, right 0.5s linear;
+}
+.menu ul li:hover div:nth-child(2){
+    opacity: 1;
+    right: -360px;
+}
+/*--- menu ---2*/
+.name {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0, 242, 242, 0.5);
+}
+.name .text-1 {
+    font-size: 100px;
+    text-shadow: 0 0 4px white;
+}
+.name .text-2 {
+    font-size: 140px;
+    text-shadow: 0 0 6px white;
+    color: blue;
+}
+.video_container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+.video_container video {
+    height: 100%;
+}
