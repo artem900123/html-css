@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Neucha|Philosopher');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Philosopher', sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*--- map ---*/
+.map {
+    position: relative;
+    overflow: hidden;
+}
+
+.map section {
+    width: 1018px;
+    height: 635px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(images/map_background.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+}
+
+section ul li {
+    position: absolute;
+    width: 82px;
+    height: 82px;
+    border-radius: 50% 50% 50% 0%;
+    transform: rotate(-45deg);
+    background-color: rgba(137, 118, 80, 0.7);
+}
+section ul li:hover{
+    background-color: rgba(137, 118, 80, 0.7);
+    border: 2px solid black;
+    box-shadow: 0 0 3px 3px #3a331f;
+}
+section ul li a {
+    color: #ffffcd;
+}
+section ul li a:hover {
+    color: #49402d;
+}
+section ul li p {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    transform: rotate(45deg);
+    padding-top: 20px;
+}
+#link1{
+    top:70px ;
+    left: 550px;
+}
+#link2{
+    top: 180px;
+    left: 120px;
+}
+#link3{
+    top: 300px;
+    left: 100px;
+}
+#link4{
+    top: 250px;
+    left: 450px;
+}
+#link5{
+    bottom: 45px;
+    left: 430px;
+}
+#link6{
+    top: 20px;
+    right: 50px;
+}
+#link7{
+    top: 120px;
+    right: 150px;
+}
+#link8{
+    bottom: 280px;
+    right: 40px;
+}
+#link9{
+    bottom: 130px;
+    right: 60px;
+}
+.left_cover, .right_cover{
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    width: 50%;
+}
+.left_cover{
+    text-align: right;
+    left: -509px;
+    animation: open_left_cover 4s ease;
+}
+.right_cover{
+    text-align: left;
+    right: -509px;
+    animation: open_right_cover 4s ease;
+}
+@keyframes open_left_cover{
+    0%, 50% {
+        left: 0px;
+    }
+    100%{
+        left: -509;
+    }
+}
+@keyframes open_right_cover{
+    0%, 50% {
+        right: 0px;
+    }
+    100%{
+        right: -509;
+    }
+}
+
+/*--- about ---*/
+.about li {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    z-index: 1;
+}
+#link1_about {
+    background-color: white;
+}
+#link1_about:target{
+    opacity: 1;
+    bottom: 50%;
+}
